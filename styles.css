@@ -24,11 +24,12 @@ body{
     padding: 20px;
     border-radius: 8px;
     z-index: 2;
+    animation: colors 10s linear infinite;
 }
 
 .form-header p{
     margin-top: 10px;
-    color: rgb(124, 116, 116);
+    color: rgb(96, 93, 93);
 }
 
 .form-body{
@@ -50,7 +51,7 @@ body{
     border-radius: 6px;
     font-size: 1rem;
 }
-.form-body input[type="submit"]{
+.form-body input[type="reset"]{
     margin-top: 4px;
     background-color: #ff2835;
     font-size: 1.1rem;
@@ -58,8 +59,7 @@ body{
     border: none;
     color: white
 }
-.form-body input[type="submit"]:hover{
-    /* background-color:#ea26cd ; */
+.form-body input[type="reset"]:hover{
     background-image: linear-gradient(to right, #ea26cd 0%, #32dcff 100%);
 }
 
@@ -87,28 +87,42 @@ body{
     background-image: linear-gradient(to right, #ea26cd 0%, #32dcff 100%);
 }
 @keyframes updown1 {
-    0%{top: 100px}
-    25%{top: 70px}
-    50%{top: 100px}
-    75%{top: 130px}
-    100%{top: 100px}
+    0%{top: 300px}
+    25%{top: 50px}
+    50%{top: 300px}
+    75%{top: 550px}
+    100%{top: 300px}
 }
 
 @keyframes updown2 {
-    0%{bottom: 100px}
-    25%{bottom: 70px}
-    50%{bottom: 100px}
-    75%{bottom: 130px}
-    100%{bottom: 100px}
+    0%{bottom: 300px}
+    25%{bottom: 50px}
+    50%{bottom: 300px}
+    75%{bottom: 550px}
+    100%{bottom: 300px}
 
 }
 .c1{
     top: 100px;
     left: 100px;
-    animation: updown1 3s linear infinite;
+    animation: updown1 10s linear infinite;
 }
 .c2{
     bottom: 100px;
     right: 100px;
-    animation: updown2 3s linear infinite;
+    animation: updown2 10s linear infinite;
+}
+
+
+@keyframes colors {
+    0%{background-color: white;}
+    15%{background-color: #f5abd4;}
+    25%{background-color: #eb7cbb}
+    40%{background-color: #f5abd4;}
+    50%{background-color: white;}
+    60%{background-color: #b9e4ed;}
+    70%{background-color: #7dd6e8;}
+    85%{background-color: #b9e4ed;}
+    100%{background-color:white;}
+    
 }
