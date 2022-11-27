@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(140deg, #f92020 0%, #e0e1e1 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    opacity: 0.9;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.form-header p{
+    margin-top: 10px;
+    color: rgb(124, 116, 116);
+}
+
+.form-body{
+    margin-top: 12px;
+}
+.form-body div{
+    margin-top: 10px;
+    width: 100%;
+}
+.form-body div p{
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding-bottom: 6px;
+}
+.form-body input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.form-body input[type="submit"]{
+    margin-top: 4px;
+    background-color: #ff2835;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    color: white
+}
+.form-body input[type="submit"]:hover{
+    /* background-color:#ea26cd ; */
+    background-image: linear-gradient(to right, #ea26cd 0%, #32dcff 100%);
+}
+
+.form-footer{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+.form-footer a{
+    color: #ff2835;
+    text-decoration: none;
+    font-weight: bold;
+}
+.form-footer a:hover{
+    color:rgb(12, 86, 245);
+}
+
+.circle{
+    z-index: 1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+    border-radius: 100%;
+    background-image: linear-gradient(to right, #ea26cd 0%, #32dcff 100%);
+}
+@keyframes updown1 {
+    0%{top: 100px}
+    25%{top: 70px}
+    50%{top: 100px}
+    75%{top: 130px}
+    100%{top: 100px}
+}
+
+@keyframes updown2 {
+    0%{bottom: 100px}
+    25%{bottom: 70px}
+    50%{bottom: 100px}
+    75%{bottom: 130px}
+    100%{bottom: 100px}
+
+}
+.c1{
+    top: 100px;
+    left: 100px;
+    animation: updown1 3s linear infinite;
+}
+.c2{
+    bottom: 100px;
+    right: 100px;
+    animation: updown2 3s linear infinite;
+}
